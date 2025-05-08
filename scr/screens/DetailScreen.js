@@ -5,9 +5,9 @@ const windowsWidth = Dimensions.get ('window').width;
 
 export default function HomeScreen ({navigation}) {
     return (
-     <View style = {StyleSheet.container}>
-         <Text style = {StyleSheet.title}> Home Screen</Text>
-         <View style = {StyleSheet.buttonContainer}>
+     <View style = {styles.container}>
+         <Text style = {styles.title}> Home Screen</Text>
+         <View style = {styles.buttonContainer}>
           <Button
             title = "Go to Home"
             onPress={() => navigation.navigate ('Home')}
