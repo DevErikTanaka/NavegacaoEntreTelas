@@ -7,8 +7,8 @@ export default function Login({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Faça Seu Login🔐</Text>
-            <TextInput style={styles.input} placeholder="Usuário" placeholderTextColor={"grey"} ></TextInput>
-            <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"grey"} secureTextEntry={true}></TextInput>
+            <TextInput style={styles.input} placeholder="Usuário" placeholderTextColor={"black"} ></TextInput>
+            <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"black"} secureTextEntry={true}></TextInput>
             <TouchableOpacity style={styles.login}><Text style={styles.Textlogin}>Login</Text></TouchableOpacity>
             <TouchableOpacity style={styles.voltar} onPress={() => navigation.navigate('Home')}><Text style={styles.Textlogin}>Voltar</Text></TouchableOpacity>
         </View>
@@ -21,10 +21,11 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#089846', 
+        backgroundColor: '#D3D3D3', 
     },
     input: {
         
+        width: 250,
         margin: 15,
         borderWidth: 2,
         borderRadius: 20,
@@ -33,25 +34,25 @@ const styles = StyleSheet.create({
     },
     login: {
         alignSelf: 'center',
-        width: 200,
+        width: 80,
         height: 40,
-        color: "#11987",
+        color: "#F8F8FF",
         borderRadius: 50,
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: "#11987",
+        backgroundColor: "#B8860B",
 
     },
     voltar: {
         alignSelf: 'center',
-        width: 200,
+        width: 80,
         height: 40,
         borderRadius: 50,
         marginTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: "#ff06f",
+        backgroundColor: "#B8860B",
 
     },
     title: {
@@ -62,3 +63,4 @@ const styles = StyleSheet.create({
         fontWeight: "bold"
     },
 });
+
